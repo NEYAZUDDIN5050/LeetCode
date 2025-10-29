@@ -80,4 +80,75 @@
 
 //Rotate array by K elements
 
+// function RotateArrByK(arr,k){
+//     let n=arr.length;
 
+//     function reverse(subArr,left,right){
+//         while(left<right){
+//             [subArr[left], subArr[right]]=[subArr[right],subArr[left]];
+//             left++;
+//             right--;
+//         }
+//     }
+//     reverse[arr,0,n-1];
+//     reverse[arr,0,k-1];
+//     reverse[arr,k ,n-1];
+// }
+// console.log(RotateArrByK([1,2,3,4,5],2))
+
+// //Move zero to an end;
+// function MoveZero(arr) {
+//   let insertPosition = 0; // Keeps track of where the next non-zero element should be placed
+//   // Loop through the array from start to end
+//   for (let i = 0; i < arr.length; i++) {
+//     // Check if the current element is NOT zero
+//     if (arr[i] !== 0) {
+//       // Place the current non-zero element at the insertPosition index
+//       arr[insertPosition] = arr[i];  
+//       // Move insertPosition forward by one so the next non-zero will be placed after it
+//       insertPosition++;
+//     }
+//   }
+//   // After placing all non-zero elements at the start,
+//   // fill the remaining positions in the array with zeros
+//   while (insertPosition < arr.length) {
+//     arr[insertPosition] = 0;
+//     insertPosition++;
+//   }
+//   // Return the modified array with zeros shifted to the end
+//   return arr;
+// }
+// console.log(MoveZero([1, 2, 3, 0, 6, 0, 7, 7]));
+//  // Output: [1, 2, 3, 6, 7, 7, 0, 0]
+
+
+//Linear search Ik baar me bnaya hu mai;
+// function LinearSearch(arr,k){
+//     let n=arr.length;
+//     let i=0;
+//     for(let i=0;i<n; i++){
+//     if(arr[i] === k){
+//         return i; 
+//     }
+//     }
+//     return -1;
+// }
+// console.log(LinearSearch([1,2,3,4,5], 3));
+
+//Merge two sorted array;
+function mergeArr(arr1,arr2){
+    let merge=[];
+    let i=0;
+    let j=0;
+    while(i<arr1.length && j<arr2.length){
+        if(arr1[i] < arr2[j]){
+            merge.push(arr1[i]);
+            i++;
+        }else{
+            merge.push(arr2[j]);
+            j++;
+        }
+    }
+    return merge;
+}
+console.log(mergeArr([1,2,34],[4,5,6]));
