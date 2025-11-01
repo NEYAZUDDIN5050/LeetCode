@@ -135,20 +135,62 @@
 // }
 // console.log(LinearSearch([1,2,3,4,5], 3));
 
-//Merge two sorted array;
-function mergeArr(arr1,arr2){
-    let merge=[];
-    let i=0;
-    let j=0;
-    while(i<arr1.length && j<arr2.length){
-        if(arr1[i] < arr2[j]){
-            merge.push(arr1[i]);
-            i++;
-        }else{
-            merge.push(arr2[j]);
-            j++;
-        }
-    }
-    return merge;
-}
-console.log(mergeArr([1,2,34],[4,5,6]));
+// //Merge two sorted array;
+// function mergeArr(arr1,arr2){
+//     let merge=[];
+//     let i=0;
+//     let j=0;
+//     while(i<arr1.length && j<arr2.length){
+//         if(arr1[i] < arr2[j]){
+//             merge.push(arr1[i]);
+//             i++;
+//         }else{
+//             merge.push(arr2[j]);
+//             j++;
+//         }
+//     }
+//     return merge;
+// }
+// console.log(mergeArr([1,2,34],[4,5,6]));
+
+//find the missing number In an array;
+
+// [1,2,3,5]
+// function missingNumber(arr){
+//     let n= arr.length;
+//    for(let i=0;i<n ; i++){
+//       if(arr[i] !== i+1 ){
+//         arr= i+1;
+//       }
+
+//    }
+//    return n;
+// }
+// console.log(missingNumber([1,2,3,5]));
+
+
+//find the number which is appearce once and other number twice;
+
+// function AppearsOnce(arr){
+//    let num=0;
+//    for(let i=0; i<arr.length; i++){
+//      num ^=  arr[i]                 //uses of xor -------
+//    }
+//    return num;
+// }
+// console.log(AppearsOnce([1,2,3,3,2]));
+
+
+//Longest Subarray with given Sum K(Positives)
+
+// function LongestSubArr(arr,k){
+//    let n= arr.length;
+//    let target=k;
+//    for(let i=0; i<n; i++){
+//       let num=target;
+//       if(target ===n);
+//       return 
+      
+       
+//    }
+// }
