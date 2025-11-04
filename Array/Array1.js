@@ -64,7 +64,7 @@
 //       }
 //       return i+1;
 // }
-// console.log(RemoveArray([1,2,3,4,4,5]));
+// console.log(RemoveArray([1,2,3,4,4,5,4]));
 
 // //Rotate first element in an array;
 // function RotateElement(arr){
@@ -98,15 +98,15 @@
 
 // //Move zero to an end;
 // function MoveZero(arr) {
-//   let insertPosition = 0; // Keeps track of where the next non-zero element should be placed
-//   // Loop through the array from start to end
-//   for (let i = 0; i < arr.length; i++) {
-//     // Check if the current element is NOT zero
-//     if (arr[i] !== 0) {
-//       // Place the current non-zero element at the insertPosition index
-//       arr[insertPosition] = arr[i];  
-//       // Move insertPosition forward by one so the next non-zero will be placed after it
-//       insertPosition++;
+//   let insertPosition = 0;      // Keeps track of where the next non-zero element should be placed
+//   
+//   for (let i = 0; i < arr.length; i++) {      // Loop through the array from start to end
+//     
+//     if (arr[i] !== 0) {                 // Check if the current element is NOT zero
+//       
+//       arr[insertPosition] = arr[i];            // Place the current non-zero element at the insertPosition index
+//       
+//       insertPosition++;                     // Move insertPosition forward by one so the next non-zero will be placed after it
 //     }
 //   }
 //   // After placing all non-zero elements at the start,
@@ -189,8 +189,6 @@
 //    for(let i=0; i<n; i++){
 //       let num=target;
 //       if(target ===n);
-//       return 
-      
-       
+//       return    
 //    }
 // }
